@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botga kirish uchun Captcha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="captcha-container">
+        <h1>Botga kirish uchun Captcha</h1>
+        <p>Iltimos, botdan foydalanish uchun quyidagi Captchani tering.</p>
+        <div class="captcha-box">
+            <canvas id="captchaCanvas" width="200" height="80"></canvas>
+            <button id="refreshCaptcha">🔄</button>
+        </div>
+        <input type="text" id="captchaInput" placeholder="Kodni kiriting">
+        <button id="verifyCaptcha">Tasdiqlash</button>
+        <p id="message" class="hidden"></p>
+        <button id="closeWindow" class="hidden close-btn">Saytni yopish</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
